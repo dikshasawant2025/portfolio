@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diksha Savan | Portfolio</title>
+  <meta name="description" content="Portfolio of Diksha Savan, Computer Science student who builds software with AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">Diksha</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Switch between dark and light mode">Light mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-text">
+        <h1>Hi, I'm Diksha.<br>I build software with AI.</h1>
+        <p>Final-year Computer Science student. I turn ideas into working projects using AI tools, my own research, and a lot of testing.</p>
+        <a href="#projects" class="btn">View my work</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="glass about-box">
+        <img src="profile.jpg" alt="Photo of Diksha" class="avatar">
+        <p>I'm a final-year B.Sc. Computer Science student at B. K. Birla College, Kalyan, Maharashtra. I'm interested in data analysis, software building, cybersecurity, and new technology tools.</p>
+        <p>I like to innovate with AI. I'm into vibe coding: describing what I want to build and working with AI agents to write the code. I have a working knowledge of coding, enough to read, test, and fix what the AI produces.</p>
+        <p>My projects are built with AI help plus my own research. My part is the idea, the planning, the research, and checking that the result actually works.</p>
+        <p>I'm open to freelance work. If you have an idea you need built clearly and on time, let's talk.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <h3 class="group">What I do</h3>
+      <ul class="tags">
+        <li>AI-assisted development</li><li>Prompting AI agents</li><li>Testing and debugging</li>
+        <li>Data analysis</li><li>Research</li><li>Idea to prototype</li>
+      </ul>
+      <h3 class="group">Tools and basics</h3>
+      <ul class="tags">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li>
+        <li>ESP32 and Arduino</li><li>Git and GitHub</li><li>Cybersecurity fundamentals</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="glass card" data-tilt>
+          <h3>Smart Home Automation</h3>
+          <p>My final-year project. Switch home appliances on and off from a phone using an ESP32 board, a 4-channel relay module, and the Blynk app over WiFi.</p>
+          <span class="meta">ESP32, IoT, Blynk</span>
+          <a href="#" target="_blank" rel="noopener">View project</a>
+        </article>
+        <article class="glass card" data-tilt>
+          <h3>Cancer Trend Analysis</h3>
+          <p>Analysed real CDC state-level cancer mortality data from 2007 to 2013, with charts and written findings. Done during my healthcare data analyst internship.</p>
+          <span class="meta">Data analysis, charts, reporting</span>
+          <a href="#" target="_blank" rel="noopener">View report</a>
+        </article>
+        <article class="glass card" data-tilt>
+          <h3>SmartLink Bharat</h3>
+          <p>Turning a simple link-collection site into one hub for government services, education, jobs, and farming information, with a rating for how verified each link is. In progress.</p>
+          <span class="meta">Web, product design</span>
+          <a href="#" target="_blank" rel="noopener">View project</a>
+        </article>
+        <article class="glass card" data-tilt>
+          <h3>CloudTrim</h3>
+          <p>A startup concept: an AI service that lowers cloud storage bills for Indian small businesses, paid as a share of the savings. I researched the market and built the pitch deck.</p>
+          <span class="meta">Startup, market research, pitch</span>
+          <a href="#" target="_blank" rel="noopener">View deck</a>
+        </article>
+        <article class="glass card" data-tilt>
+          <h3>This portfolio</h3>
+          <p>A single-page site with a 3D hero, light and dark modes, and a working contact form. Built with AI help, plain HTML, CSS, and JavaScript.</p>
+          <span class="meta">HTML, CSS, JavaScript, Three.js</span>
+          <a href="#" target="_blank" rel="noopener">View code</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="interests" class="section">
+      <h2>What I'm exploring</h2>
+      <ul class="tags">
+        <li>AI agents</li><li>Data analysis</li><li>Cybersecurity</li>
+        <li>New developer tools</li><li>IoT</li><li>Startup ideas</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="contact-line">Email: <a href="mailto:dikshasawant2025@gmail.com">dikshasawant2025@gmail.com</a></p>
+      <form class="glass form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">What do you need built?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Designed and built by Diksha</p></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
